@@ -46,6 +46,20 @@ class App < Sinatra::Base
     books = Book.all
     books.to_json(:include => :authors)
   end
+
+  post '/add_book' do
+    payload = JSON.parse(request.body.read)
+    puts payload["authors"]
+    authors = payload["authors"].collect{|author|{name: author}}
+    payload.delete("authors")
+    payload[:authors_attributes] = authors
+    begin
+      book = Book.create!(payload)
+      status 201
+      body book.to_json(:include => :authors)
+    rescue => e
+      status 400
+      body e.message.to_json
+    end
+  end
 end
-
-
