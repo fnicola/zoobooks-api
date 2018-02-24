@@ -15,6 +15,31 @@ ActiveRecord::Schema.define(version: 20180224101646) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "authors", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "nationality"
+  end
+
+  create_table "authors_books", id: false, force: :cascade do |t|
+    t.integer "book_id", null: false
+    t.integer "author_id", null: false
+    t.index ["author_id"], name: "index_authors_books_on_author_id"
+    t.index ["book_id"], name: "index_authors_books_on_book_id"
+  end
+
+  create_table "books", id: :serial, force: :cascade do |t|
+    t.string "isbn"
+    t.string "title"
+    t.string "subtitle"
+    t.text "description"
+    t.string "publisher"
+    t.string "publishedDate"
+    t.integer "pageCount"
+    t.string "language"
+    t.string "previewLink"
+    t.string "google_thumbnail"
+  end
+
   create_table "nicolas", force: :cascade do |t|
     t.string "title"
     t.text "body"
