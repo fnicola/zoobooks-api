@@ -2,8 +2,15 @@
 require "sinatra"
 require 'sinatra/activerecord'
 
+class Nicola < ActiveRecord::Base
+  validates :title, presence: true
+end
+
 class App < Sinatra::Base
   get "/" do
-    erb :index
+    nicola = Nicola.new(title: "nicola")
+    nicola.title
   end
 end
+
+
