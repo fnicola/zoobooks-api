@@ -62,4 +62,14 @@ class App < Sinatra::Base
       body e.message.to_json
     end
   end
+
+  delete '/delete_book/:isbn' do
+    begin
+      Book.find_by(isbn: params['isbn']).destroy
+      status 200
+    rescue => e
+      status 400
+      body e.message.to_json   
+    end
+  end
 end
