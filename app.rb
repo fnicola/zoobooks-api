@@ -8,11 +8,15 @@ class Book < ActiveRecord::Base
 
   validates :isbn, uniqueness: true
 
-  def self.book_for isbn
+  def self.book_lookup isbn
     uri = URI("https://www.googleapis.com/books/v1/volumes?q=isbn:#{isbn}")
-    result = Net::HTTP.get(uri)
-    json_result = JSON.parse(result)
-    puts isbn if json_result["items"].nil?
+    result = JSON.parse(Net::HTTP.get(uri))
+  end
+
+  def self.book_for(isbn, category)
+    json_result = book_lookup(isbn)
+    puts json_result
+    puts isbn if json_result["items"].nil? #TODO replace with logger
     return if json_result["items"].nil?
     volumeInfo = json_result["items"][0]["volumeInfo"]
     attributes = {}
@@ -20,6 +24,7 @@ class Book < ActiveRecord::Base
       attributes[attribute.to_sym] = volumeInfo[attribute]
     end
     attributes[:isbn] = isbn
+    attributes[:category] = category
     attributes[:google_thumbnail] = volumeInfo["imageLinks"]["thumbnail"] if volumeInfo["imageLinks"]
     author_name = volumeInfo["author"]
     authors = { title: author_name } if author_name
@@ -69,7 +74,7 @@ class App < Sinatra::Base
       status 200
     rescue => e
       status 400
-      body e.message.to_json   
+      body e.message.to_json
     end
   end
 end

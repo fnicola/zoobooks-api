@@ -1,65 +1,64 @@
-Name,ISBN
-Just Listen:Discover the Secret to Getting Through to Absolutely Anyone,9780814414033
-Product Demos that Sell: How to Deliver Winning SaaS Demos,9781517707828
-A practical guide to Social Intelligence,1512058203
-Extreme Programming Refactored: The Case Against XP,1590590961
-Extreme Programming Explained: Embrace Change,0321278658
-The Non Technical Guide to Web Technologies,1492791539
-Salesforce 1 Platform Developer Guide,1304566161
-User Stories Applied: For Agile Software Development,0321205685
-Mobile App Developer Guide,1304566218
-XUnit Test Patterns: Refactoring Test Code,9780131495050
-Android Application Development,0596521472
-Android Application Development for Dummies,047077018X
-Objective-C Programming: The Big Nerd Ranch Guide,9780321706287
-Effective C++: 50 Specific Ways To Improve Your Programs And Design ,9780201924889
-Android Application for Dummies All-In-One ,1118027701
-Force.com Fundamentals: Introduction to Custom Development,9781304561923
-Managing Successful Projects with PRINCE2,9780113310593
-"Growing Object-oriented Sofware, Guided by Tests",9780321503626
-Working Effectively with Legacy Code,9780131177055
-Pervasive Information Architecture: Designing Cross-channel User Experiences,9780123820945
-Objective-C Programming: The Big Nerd Ranch Guide,9780321706287
-"Manage It! Your Guide to Modern, Pragmatic Project Management",0976694026
-The Non-Technical Guide to Web Technologies,1492791539
-Understanding ECMAScript : The definitive guide for JavaScript Developers,9781593277574
-"Getting Real : The Smarter, Faster, Easier way to build a successful web application",9780578012810
-Rolling Rocks Down Hill: the Agile Business Model,9781505446517
-Force.com Workbook: Build your First App in the Cloud,NO ISBN
-Customer Obsessed: A whole Company Approach to Delivering Exceptional Customer Experiences,1119326036
-Measuring The User Experience,9780123735584
-Customer Success: How Innovative Companies Are Reducing Churn and Groing Recurring Revenue,1119167965
-FANS! Not Customers: How to Create Growth Companies in a No Growth World,1781251126
-Farm don't Hunt: The Definitive Guide to Customer Success,9780692620939
-The Ten Principles Behind Great Customer Experiences,0273775081
-"Delivering Happiness: A Path to Profits, Passion and Purpose",145550890X
-The Book of Leadership,0349403406
-Lovability,1626344035
-Agile and Iterative Development: A Manager's Guide,9780131111554
-Influencer Marketing for Dummies,1119114098
-Black Box Thinking,9781473613805
-Blindspot: Hidden Biases of Good People,0345528433
-The Loudest Duck: Moving Beyond Diversity While Embracing Difference to Acheive Success at Work,9780470485842
-Behind the Cloud:The Untold Story of How SalesForce.com Went from Idea to Billion Dollar Company- and Revolutionized an Industry,0470521163
-Behind the Cloud:The Untold Story of How SalesForce.com Went from Idea to Billion Dollar Company- and Revolutionized an Industry,0470521163
-Work Rules!,1444792385
-Distruped:Ludicrous Misadverntures Into the Tech Start-Up Bubble,1786491370
-The Lean Start-Up How Today's Entrepeneurs Use Continuous Innovation to Create Radically Successful Businesses,0670921602
-Profitable Omni-Channel for Dummies,9781119185963
-Built to Last: Successful Habits of Visionary Companies,9780060516406
-Careers Anchors: Third Edition,078798428
-The Other Hundred Entrepeneurs,9781780747125
-The Motivation Hacker,098927982
-Deep Work,9780349411903
-ReWork:Change the way you Work Forever,9780091929787
-Thinking Fast and Slow,9780141033570
-The Checklist Manefesto: How to get things right,9781846683145
-"Happy Hour 9 To 5: How to Love your Job, Love your Life and Kick Butt at Work",9780991260911
-Power of Habit,9781847946249
-How the World Really Works Intellectual Property,9781904711254
-Bullseye,0099594382
-A Wild Sheep Chase,0099448777
-Hate Mail,0718159039
-On the Road,0141182679
-The Quantum Universe: Everything that Can Happen Does Happen,02419527
-Colourless Tsukuru and His Years of Pilgrimage,9781846558337
+Name,ISBN,Category
+Just Listen:Discover the Secret to Getting Through to Absolutely Anyone,9780814414033,Communication
+Product Demos that Sell: How to Deliver Winning SaaS Demos,9781517707828,Communication
+A practical guide to Social Intelligence,1512058203,Communication
+Extreme Programming Refactored: The Case Against XP,1590590961,Agile & Tech
+Extreme Programming Explained: Embrace Change,0321278658,Agile & Tech
+The Non Technical Guide to Web Technologies,1492791539,Agile & Tech
+Salesforce 1 Platform Developer Guide,1304566161,Agile & Tech
+User Stories Applied: For Agile Software Development,0321205685,Agile & Tech
+Mobile App Developer Guide,1304566218,Agile & Tech
+XUnit Test Patterns: Refactoring Test Code,9780131495050,Agile & Tech
+Android Application Development,0596521472,Agile & Tech
+Android Application Development for Dummies,047077018X,Agile & Tech
+Objective-C Programming: The Big Nerd Ranch Guide,9780321706287,Agile & Tech
+Effective C++: 50 Specific Ways To Improve Your Programs And Design ,9780201924889,Agile & Tech
+Android Application for Dummies All-In-One ,1118027701,Agile & Tech
+Force.com Fundamentals: Introduction to Custom Development,9781304561923,Agile & Tech
+Managing Successful Projects with PRINCE2,9780113310593,Agile & Tech
+"Growing Object-oriented Sofware, Guided by Tests",9780321503626,Agile & Tech
+Working Effectively with Legacy Code,9780131177055,Agile & Tech
+Pervasive Information Architecture: Designing Cross-channel User Experiences,9780123820945,Agile & Tech
+Objective-C Programming: The Big Nerd Ranch Guide,9780321706287,Agile & Tech
+"Manage It! Your Guide to Modern, Pragmatic Project Management",0976694026,Agile & Tech
+The Non-Technical Guide to Web Technologies,1492791539,Agile & Tech
+Understanding ECMAScript : The definitive guide for JavaScript Developers,9781593277574,Agile & Tech
+"Getting Real : The Smarter, Faster, Easier way to build a successful web application",9780578012810,Agile & Tech
+Rolling Rocks Down Hill: the Agile Business Model,9781505446517,Agile & Tech
+Force.com Workbook: Build your First App in the Cloud,NO ISBN,Agile & Tech
+Customer Obsessed: A whole Company Approach to Delivering Exceptional Customer Experiences,1119326036,Customer Centricity
+Measuring The User Experience,9780123735584,Customer Centricity
+Customer Success: How Innovative Companies Are Reducing Churn and Groing Recurring Revenue,1119167965,Customer Centricity
+FANS! Not Customers: How to Create Growth Companies in a No Growth World,1781251126,Customer Centricity
+Farm don't Hunt: The Definitive Guide to Customer Success,9780692620939,Customer Centricity
+The Ten Principles Behind Great Customer Experiences,0273775081,Customer Centricity
+"Delivering Happiness: A Path to Profits, Passion and Purpose",145550890X,Customer Centricity
+The Book of Leadership,0349403406,Leadership & Culture
+Lovability,1626344035,Leadership & Culture
+Agile and Iterative Development: A Manager's Guide,9780131111554,Leadership & Culture
+Influencer Marketing for Dummies,1119114098,Leadership & Culture
+Black Box Thinking,9781473613805,Leadership & Culture
+Blindspot: Hidden Biases of Good People,0345528433,Leadership & Culture
+The Loudest Duck: Moving Beyond Diversity While Embracing Difference to Acheive Success at Work,9780470485842,Leadership & Culture
+Behind the Cloud:The Untold Story of How SalesForce.com Went from Idea to Billion Dollar Company- and Revolutionized an Industry,0470521163,Start-up & Entrepreneurial
+Work Rules!,1444792385,Start-up & Entrepreneurial,Start-up & Entrepreneurial
+Distruped:Ludicrous Misadverntures Into the Tech Start-Up Bubble,1786491370,Start-up & Entrepreneurial
+The Lean Start-Up How Today's Entrepeneurs Use Continuous Innovation to Create Radically Successful Businesses,0670921602,Start-up & Entrepreneurial
+Profitable Omni-Channel for Dummies,9781119185963,Start-up & Entrepreneurial
+Built to Last: Successful Habits of Visionary Companies,9780060516406,Start-up & Entrepreneurial
+Careers Anchors: Third Edition,078798428,Start-up & Entrepreneurial
+The Other Hundred Entrepeneurs,9781780747125,Start-up & Entrepreneurial
+The Motivation Hacker,098927982,Work & Wellbeing
+Deep Work,9780349411903,Work & Wellbeing
+ReWork:Change the way you Work Forever,9780091929787,Work & Wellbeing
+Thinking Fast and Slow,9780141033570,Work & Wellbeing
+The Checklist Manefesto: How to get things right,9781846683145,Work & Wellbeing
+"Happy Hour 9 To 5: How to Love your Job, Love your Life and Kick Butt at Work",9780991260911,Work & Wellbeing
+Power of Habit,9781847946249,Work & Wellbeing
+How the World Really Works Intellectual Property,9781904711254,Work & Wellbeing
+Bullseye,0099594382,Other
+A Wild Sheep Chase,0099448777,Other
+Hate Mail,0718159039,Other
+On the Road,0141182679,Other
+The Quantum Universe: Everything that Can Happen Does Happen,02419527,Other
+Colourless Tsukuru and His Years of Pilgrimage,9781846558337,Other

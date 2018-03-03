@@ -9,7 +9,8 @@ namespace :bookshelf do
     path = args[:path]
     CSV.foreach(path, {:headers => true, :header_converters => :symbol}) do |row|
       isbn = row[:isbn]
-      Book.book_for isbn
+      category = row[:category]
+      Book.book_for(isbn, category)
     end
     # path = args[:path]
     # CSV.foreach(path, {:headers => true, :header_converters => :symbol}) do |row|
