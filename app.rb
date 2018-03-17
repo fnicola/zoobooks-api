@@ -1,6 +1,7 @@
 # app.rb
 require "sinatra"
 require 'sinatra/activerecord'
+require 'pry'
 
 class Book < ActiveRecord::Base
   has_and_belongs_to_many :authors
@@ -54,12 +55,13 @@ class App < Sinatra::Base
 
   post '/add_book' do
     payload = JSON.parse(request.body.read)
+    book
     puts payload["authors"]
     authors = payload["authors"].collect{|author|{name: author}}
     payload.delete("authors")
     payload[:authors_attributes] = authors
     begin
-      book = Book.create!(payload)
+      book = Book.create!(payload.slice(*Book.column_names))
       status 201
       body book.to_json(:include => :authors)
     rescue => e
