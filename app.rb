@@ -65,9 +65,7 @@ class App < Sinatra::Base
   end
 
   post '/add_book' do
-    binding.pry
     payload = JSON.parse(request.body.read)
-    book
     puts payload["authors"]
     authors = payload["authors"].collect{|author|{name: author}}
     payload.delete("authors")
