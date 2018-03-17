@@ -53,7 +53,19 @@ class App < Sinatra::Base
     books.to_json(:include => :authors)
   end
 
+  get '/:isbn' do
+    begin
+      book = Book.find_by_isbn(params['isbn'])
+      raise "book with isbn: #{params['isbn']} not found" unless book
+      book.to_json(:include => :authors)
+    rescue => e
+      status 404
+      body ({"error" => e.message}.to_json)
+    end
+  end
+
   post '/add_book' do
+    binding.pry
     payload = JSON.parse(request.body.read)
     book
     puts payload["authors"]
