@@ -68,10 +68,10 @@ class App < Sinatra::Base
     payload = JSON.parse(request.body.read)
     puts payload["authors"]
     authors = payload["authors"].collect{|author|{name: author}}
-    payload.delete("authors")
-    payload[:authors_attributes] = authors
+    book_params = payload.slice(*Book.column_names)
+    book_params[:authors_attributes] = authors
     begin
-      book = Book.create!(payload.slice(*Book.column_names))
+      book = Book.create!(book_params)
       status 201
       body book.to_json(:include => :authors)
     rescue => e
